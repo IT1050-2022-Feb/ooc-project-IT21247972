@@ -16,13 +16,14 @@ protected:
   int customerTel;
   char username[10];
   char password[10];
+  long customerNic;
 
 
 public:
 
   UnregisteredCustomer();
 
-  UnregisteredCustomer(int cid, const char cname[], const char cmail[], const char cdob[], const char caddress[], int ctel,const char uname[], const char pword[]);
+  UnregisteredCustomer(int cid, const char cname[], const char cmail[], const char cdob[], const char caddress[], int ctel,const char uname[], const char pword[], int nic);
 
   void regisration();
 

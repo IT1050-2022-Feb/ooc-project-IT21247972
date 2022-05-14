@@ -1,6 +1,8 @@
 #include <cstring>
 #include "UnregisteredCustomer.h"
 
+using namespace std;
+
 UnregisteredCustomer::UnregisteredCustomer()
 {
   customerId = 0;
@@ -11,9 +13,10 @@ UnregisteredCustomer::UnregisteredCustomer()
   customerTel = 0;
   strcpy_s(username, "");
   strcpy_s(password, "");
+  customerNic=0;
 }
 
-UnregisteredCustomer::UnregisteredCustomer(int cid, const char cname[], const char cmail[], const char cdob[], const char caddress[], int ctel, const char uname[], const char pword[])
+UnregisteredCustomer::UnregisteredCustomer(int cid, const char cname[], const char cmail[], const char cdob[], const char caddress[], int ctel, const char uname[], const char pword[], int nic)
 {
   customerId = cid;
   strcpy_s(customerName, cname);
@@ -23,6 +26,9 @@ UnregisteredCustomer::UnregisteredCustomer(int cid, const char cname[], const ch
   customerTel = ctel;
   strcpy_s(username,uname);
   strcpy_s(password,pword);
+  customerNic=nic;
+
+  
 }
 
 void UnregisteredCustomer::regisration()

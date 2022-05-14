@@ -1,6 +1,8 @@
 #include "RegisteredCustomer.h"
 #include <cstring>
 
+using namespace std;
+
 RegisteredCustomer::RegisteredCustomer()
 {
   strcpy_s(username, " ");

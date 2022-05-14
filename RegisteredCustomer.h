@@ -2,6 +2,7 @@
 #include "Booking.h"
 #include "Movie.h"
 #define SIZE 2
+
 class RegisteredCustomer: public UnregisteredCustomer
 {
 private:
